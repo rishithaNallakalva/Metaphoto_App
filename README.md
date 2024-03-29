@@ -13,6 +13,7 @@ METAPHOTO is built using the following technologies:
 - ExpressJS: A fast and minimalist web framework for Node.js, used for building robust APIs.
 - HTML: For structuring the web pages and presenting content.
 - CSS: Utilized for styling and enhancing the visual appeal of the application.
+- POSTMAN: To check data.
 
 ## Development Process
 
