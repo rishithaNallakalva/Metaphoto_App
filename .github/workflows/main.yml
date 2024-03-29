@@ -30,4 +30,4 @@ jobs:
         with:
           app-name: 'MetaPhoto'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ${{ github.workspace }}/Metaphoto_App  # Set the path to your app
+          package: ${{ github.workspace }}  # Set the path to your app
