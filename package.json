@@ -21,8 +21,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"node C:\\Assignment\\photos-ui\\src\\server.js\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "react-scripts build",    
     "eject": "react-scripts eject",
     "start-mock-server": "node mock-server.js"
   },
