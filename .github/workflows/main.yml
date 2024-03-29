@@ -1,4 +1,6 @@
 # File: .github/workflows/workflow.yml
+env:
+  CI: false
 name: JavaScript CI
 
 on: [push]
