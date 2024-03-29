@@ -1,0 +1,33 @@
+# File: .github/workflows/workflow.yml
+env:
+  CI: false
+name: JavaScript CI
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      # Set up Node.js, install dependencies, and build your app
+
+      - name: Deploy to Azure Web App
+        uses: Azure/webapps-deploy@v3
+        with:
+          app-name: 'MetaPhoto'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ${{ github.workspace }}  # Set the path to your app
