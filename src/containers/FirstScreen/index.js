@@ -119,7 +119,7 @@ return (
 {selectedPhoto && (
   <div className="modal">
     <div className="modal-content">
-      <span className="close" onClick={handleCloseModal}>&times;</span>
+    <span className="close" onClick={handleCloseModal}>&times;</span>
       <CardDetails photo={selectedPhoto} />
     </div>
   </div>
