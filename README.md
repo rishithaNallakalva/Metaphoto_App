@@ -90,7 +90,7 @@ To clone a repository to your local machine or store your code on GitHub, follow
 3. **Clone the Repository**:
    Once Git is installed, navigated to the directory where you want to clone the repository using the Terminal. Then, use the following command to clone the repository:
    ```
-   git clone <>
+   git clone <Metaphoto_App>
    ```
 
 4. **Pulled Latest Changes**:(Making it as best practice).
