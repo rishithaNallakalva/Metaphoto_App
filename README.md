@@ -112,7 +112,6 @@ To clone a repository to your local machine or store your code on GitHub, follow
    git push origin main
    ```
 
-Deployed codes to Azure cloud through CI/CD pipelines.
 Part 2: The Web Application
 Application generated Screenshots:
 The default page displays various options, including filtration, pagination, and images, allowing users to interact with the application seamlessly. Upon reloading the page, users are presented with these features, facilitating easy navigation and exploration of the content.
@@ -148,7 +147,8 @@ Implement a CI/CD pipeline to deploy your project to the cloud provider
 2) URL to test the web application
     - [METAPHOTO API](https://metaphotoapi.azurewebsites.net//externalapi/photos/1)
 
---YAML files have been supplied to facilitate CI/CD deployments to Azure.
+--YAML files have been supplied to facilitate CI/CD deployments.
+--Deployed codes to Azure cloud through CI/CD pipelines.
 
 ## Usage
 ##Conclusion
