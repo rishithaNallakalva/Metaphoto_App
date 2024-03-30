@@ -112,7 +112,7 @@ To clone a repository to your local machine or store your code on GitHub, follow
    git push origin main
    ```
 
-Part 2: The Web Application
+Part 2: The Web Application                                                                                                                                                          
 --Application generated Screenshots:
 The default page displays various options, including filtration, pagination, and images, allowing users to interact with the application seamlessly. Upon reloading the page, users are presented with these features, facilitating easy navigation and exploration of the content.
 <img width="1440" alt="Screenshot 2024-03-30 at 11 17 21 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fe07754f-b8f7-4b99-8196-ebff0c49acae">
@@ -130,21 +130,22 @@ Problem 1.2: The filtering
 <img width="1440" alt="Screenshot 2024-03-30 at 11 19 10 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/d3c8b1ed-6b5f-4534-86e6-95f28683db67">
 
 Problem 1.3: The pagination
+
 1)The "pagesize" feature displays the number of items per page in the application, providing users with control over the amount of data visible at once.
 <img width="1440" alt="Screenshot 2024-03-30 at 11 23 53 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/f677e7b9-67f6-46b7-85a4-8f3ab3491ba6">
 2)The application includes functionality to specify start and end pages, allowing users to navigate through paginated data efficiently. Users can move to the next page or previous page to explore additional content, enhancing their browsing experience. This feature optimizes data presentation and facilitates seamless access to information across multiple pages.
  <img width="1440" alt="Screenshot 2024-03-30 at 11 25 36 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/09abab72-86e0-45ac-869f-c2336f368199">
  
- Extra Features on click Get username and Image when click on thumbnailurl in default page
+ Extra Features on click Get username and Image when click on thumbnailurl in default page.
  <img width="1440" alt="Screenshot 2024-03-30 at 11 33 50 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fd2de239-f6cb-48a0-b8b5-4c868235fe65">
 
 Part 3: Extra Points
  
-Implement a CI/CD pipeline to deploy your project to the cloud provider
+Implement a CI/CD pipeline to deploy your project to the cloud provider.
 --Public URLs:
-1) URL to test the web application
+1)  web application URL.
     - [METAPHOTO Web App](https://metagallery.azurewebsites.net/)
-2) URL to test the web application
+2)  External Api Endpoint URL.
     - [METAPHOTO API](https://metaphotoapi.azurewebsites.net//externalapi/photos/1)
 
 
@@ -152,14 +153,10 @@ Implement a CI/CD pipeline to deploy your project to the cloud provider
 https://github.com/rishithaNallakalva/Metaphoto_App/tree/main/.github/workflows
 --Deployed codes to Azure cloud through CI/CD pipelines.
 
-## Usage
-##Conclusion
-Upon running the application, users can:
+## Conclusion:
 
-- Visualize photos and associated data in the application UI.
-- Navigate through albums and user information using pagination with limit and offset parameters.
-- Implement filters for title, email, or a combination of both, providing refined search results.
-- Displaying Popup to show Related Photo to thumbnail Url.
+In conclusion, MetaPhoto offers a reliable way for consumers to easily browse, organize, and examine photo collections. With its user-friendly interface, effective backend design, and flawless Azure deployment, MetaPhoto guarantees a seamless and joyful experience. The software simplifies photo exploration and boosts speed with features like pagination, filtering, and unified API endpoints. MetaPhoto is an excellent example of how to employ contemporary web development tools to create a user-friendly and engaging solution for users to engage with their photo collections.
+
 
 
 
