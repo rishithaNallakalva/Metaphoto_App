@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: build/
+          path: MetaPhotoApi/build
 
   deploy:
     runs-on: ubuntu-latest
