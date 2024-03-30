@@ -113,7 +113,7 @@ To clone a repository to your local machine or store your code on GitHub, follow
    ```
 
 Part 2: The Web Application
-Application generated Screenshots:
+--Application generated Screenshots:
 The default page displays various options, including filtration, pagination, and images, allowing users to interact with the application seamlessly. Upon reloading the page, users are presented with these features, facilitating easy navigation and exploration of the content.
 <img width="1440" alt="Screenshot 2024-03-30 at 11 17 21 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fe07754f-b8f7-4b99-8196-ebff0c49acae">
 Part 1: The API Endpoint
