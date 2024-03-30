@@ -32,7 +32,7 @@ jobs:
       - name: Move build output to MetaPhotoApi/build
         run: |
           mkdir -p MetaPhotoApi/build
-          mv dist/* MetaPhotoApi/build
+          mv build-output/* MetaPhotoApi/build
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
