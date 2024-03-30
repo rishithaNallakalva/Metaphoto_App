@@ -73,19 +73,22 @@ To clone a repository to your local machine or store your code on GitHub, follow
 
 4. **Pull Latest Changes**:
    To pull the latest changes from the repository, navigate to the repository directory using the Terminal and run:
-
+  ```
    git pull origin main
-
+  ```
 
 5. **Commit Your Changes**:
    After making changes to your local repository, you need to commit those changes. Navigate to the repository directory using the Terminal and run:
+   ```
    git add .
    git commit -m 'Your commit message here'
-
+  ```
 
 6. **Push Changes to GitHub**:
    Finally, to push your changes to the GitHub repository, run the following command in the Terminal:
-   git push origin main
+  ```
+git push origin main
+  ```
 
 ## Usage
 Upon running the application, users can:
