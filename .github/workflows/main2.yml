@@ -4,7 +4,7 @@
 name: MetaPhotoAPI
 defaults:
   run:
-    working-directory: MetaPhotoApi
+    working-directory: ./MetaPhotoApi
 on:
   push:
     branches:
@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: .
+          path: ./MetaPhotoApi/build
 
   deploy:
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: node-app
-
+          path: ./MetaPhotoApi/build          
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
