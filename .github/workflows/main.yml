@@ -52,4 +52,4 @@ jobs:
           app-name: 'MetaGallery'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_82FFAF98D3F9451DB204A8222332E679 }}
-          package: build/
+          package: .
