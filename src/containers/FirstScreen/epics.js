@@ -7,7 +7,7 @@ import { FETCH_PHOTO } from './constants';
 
 // Define the base URL for development and production
 const BASE_URL_DEV = 'http://localhost:3001';
-const BASE_URL_PROD = 'https://example.com/api';
+const BASE_URL_PROD = 'https://metaphotoapi.azurewebsites.net';
 
 export const fetchPhotosEpic = action$ => action$.pipe(
   ofType(FETCH_PHOTO),
