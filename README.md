@@ -25,23 +25,23 @@ METAPHOTO is built using the following technologies:
 
 ### Setting Up the Environment
 
-1. Install Visual Studio Code from [here](https://code.visualstudio.com/download).
-2. Open Visual Studio Code and create a new project directory.
+1. Installed Visual Studio Code from [here](https://code.visualstudio.com/download).
+2. Opened Visual Studio Code and create a new project directory.
 
 ### Creating React App
 
 #### React
-1. Create a new React app using the following command:
+1. Creating a new React app using the following command:
    ```
    npx create-react-app Metaphoto_App-main
    ```
-2. Navigate to the newly created directory:
+2. Navigating to the newly created directory:
    ```
    cd Metaphoto_App-main
    ```
 
 #### Node.js
-Run these commands to generate a folder inside Metaphoto_App-main:
+Ran these commands to generate a folder inside Metaphoto_App-main:
    ```
    mkdir MetaPhotoApi                      
    cd MetaPhotoApi
@@ -51,56 +51,56 @@ Run these commands to generate a folder inside Metaphoto_App-main:
 
 ### Installing Dependencies
 
-Ensure all required packages and dependencies are installed by running:
+Ensured all required packages and dependencies are installed by running:
 ```
 npm install
 ```
 
 ### Running the Application
 
-Launch the application to build and open it in a web browser window:
+Launching the application to build and open it in a web browser window:
 ```
 npm start
 ```
 
 ### Backend Development
 
-1. Develop APIs using Node.js and Express.js to handle requests and serve data.
-2. Access JSON data from provided endpoints:
+1. Developing APIs using Node.js and Express.js to handle requests and serve data.
+2. Accessed JSON data from provided endpoints:
    - [Users Endpoint](https://jsonplaceholder.typicode.com/users)
    - [Photos Endpoint](https://jsonplaceholder.typicode.com/photos)
    - [Albums Endpoint](https://jsonplaceholder.typicode.com/albums)
 
 ### Cloning Web Repository to GitHub
 
-To clone a repository to your local machine or store your code on GitHub, follow these steps:
+To clone a repository to your local machine or store your code on GitHub, followed these steps:
 
 1. **Install Gitbash (Optional)**:
-   If you're on macOS and want to use Git Bash, you can install it using the following command in your Terminal:
+   I have developed in macOS and  to use Git Bash, I have installed it using the following command in your Terminal:
    ```
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
 2. **Install Git**:
-   If Git is not already installed on your macOS system, you can install it using Homebrew. Run the following command in your Terminal:
+    Installed it using Homebrew. Ran the following command in your Terminal:
    ```
    brew install git
    ```
 
 3. **Clone the Repository**:
-   Once Git is installed, navigate to the directory where you want to clone the repository using the Terminal. Then, use the following command to clone the repository:
+   Once Git is installed, navigated to the directory where you want to clone the repository using the Terminal. Then, use the following command to clone the repository:
    ```
-   git clone <repository_url>
+   git clone <>
    ```
 
-4. **Pull Latest Changes**:
-   To pull the latest changes from the repository, navigate to the repository directory using the Terminal and run:
+4. **Pulled Latest Changes**:(Making it as best practice).
+   used pulling the latest changes from the repository, navigated to the repository directory using the Terminal and run:
    ```
    git pull origin main
    ```
 
 5. **Commit Your Changes**:
-   After making changes to your local repository, you need to commit those changes. Navigate to the repository directory using the Terminal and run:
+   After making changes to  local repository, you need to commit those changes. Navigated to the repository directory using the Terminal and run:
    ```
    git add .
    git commit -m 'New UI changes for photo album page'
@@ -142,7 +142,7 @@ Problem 1.3: The pagination
 
 ## Part 3: Extra Points
  
-Implement a CI/CD pipeline to deploy your project to the cloud provider.
+Implemented a CI/CD pipeline to deploy your project to the cloud provider.
 --Public URLs:
 1)  web application URL.
     - [METAPHOTO Web App](https://metagallery.azurewebsites.net/)
@@ -156,7 +156,7 @@ https://github.com/rishithaNallakalva/Metaphoto_App/tree/main/.github/workflows
 
 ## Conclusion:
 
-In conclusion, MetaPhoto offers a reliable way for consumers to easily browse, organize, and examine photo collections. With its user-friendly interface, effective backend design, and flawless Azure deployment, MetaPhoto guarantees a seamless and joyful experience. The software simplifies photo exploration and boosts speed with features like pagination, filtering, and unified API endpoints. MetaPhoto is an excellent example of how to employ contemporary web development tools to create a user-friendly and engaging solution for users to engage with their photo collections.
+In conclusion, MetaPhoto offers a reliable way for consumers to easily browse, organize, and examine photo collections. With its user-friendly interface, effective backend design, and Azure deployment, MetaPhoto guarantees a seamless and joyful experience. The software simplifies photo exploration and boosts speed with features like pagination, filtering, and unified API endpoints. MetaPhoto is an excellent example of how to employ contemporary web development tools to create a user-friendly and engaging solution for users to engage with their photo collections.
 
 
 
