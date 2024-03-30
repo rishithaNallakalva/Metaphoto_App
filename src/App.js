@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoComponent from './containers/FirstScreen';
+
 import './App.css';
 
 function App() {
