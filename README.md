@@ -112,11 +112,12 @@ To clone a repository to your local machine or store your code on GitHub, follow
    git push origin main
    ```
 
-Part 2: The Web Application                                                                                                                                                          
+##Part 2: The Web Application                                                                                                                                                          
 --Application generated Screenshots:
 The default page displays various options, including filtration, pagination, and images, allowing users to interact with the application seamlessly. Upon reloading the page, users are presented with these features, facilitating easy navigation and exploration of the content.
 <img width="1440" alt="Screenshot 2024-03-30 at 11 17 21 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fe07754f-b8f7-4b99-8196-ebff0c49acae">
-Part 1: The API Endpoint
+
+##Part 1: The API Endpoint
 Problem 1.1: The data enrichment
 An external API endpoint has been developed by integrating internal API endpoints. This consolidated endpoint retrieves photo information along with associated album and user details in a single API call. By leveraging existing internal API endpoints, we ensure efficient data retrieval while minimizing network overhead and improving user experience.
 <img width="1440" alt="Screenshot 2024-03-30 at 10 35 30 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/4ba9dee4-3646-4fb4-a3dd-06bebd738a6a">
@@ -139,7 +140,7 @@ Problem 1.3: The pagination
  Extra Features on click Get username and Image when click on thumbnailurl in default page.
  <img width="1440" alt="Screenshot 2024-03-30 at 11 33 50 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fd2de239-f6cb-48a0-b8b5-4c868235fe65">
 
-Part 3: Extra Points
+## Part 3: Extra Points
  
 Implement a CI/CD pipeline to deploy your project to the cloud provider.
 --Public URLs:
