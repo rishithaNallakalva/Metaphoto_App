@@ -113,26 +113,51 @@ To clone a repository to your local machine or store your code on GitHub, follow
    ```
 
 Deployed codes to Azure cloud through CI/CD pipelines.
-
+Part 2: The Web Application
 Application generated Screenshots:
+The default page displays various options, including filtration, pagination, and images, allowing users to interact with the application seamlessly. Upon reloading the page, users are presented with these features, facilitating easy navigation and exploration of the content.
+<img width="1440" alt="Screenshot 2024-03-30 at 11 17 21 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fe07754f-b8f7-4b99-8196-ebff0c49acae">
+Part 1: The API Endpoint
+Problem 1.1: The data enrichment
+An external API endpoint has been developed by integrating internal API endpoints. This consolidated endpoint retrieves photo information along with associated album and user details in a single API call. By leveraging existing internal API endpoints, we ensure efficient data retrieval while minimizing network overhead and improving user experience.
+<img width="1440" alt="Screenshot 2024-03-30 at 10 35 30 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/4ba9dee4-3646-4fb4-a3dd-06bebd738a6a">
+<img width="1440" alt="Screenshot 2024-03-30 at 11 57 23 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/6c07993b-18a3-46fb-bc8a-ded25586bc45">
 
-<img width="1440" alt="Screenshot 2024-03-30 at 11 17 21 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/359fa86f-240f-46d1-8e52-e1ac5bc621d4"><img width="1440" alt="Screensh<img width="1440" alt="Screenshot 2024-03-30 at 11 33 50 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/1bfde2d1-3277-4c8e-b361-13aa7d993d2e">
-ot 2024-03-30 at 11 25 36 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/e3409ed7-3dae-4ae3-b93c-0b794293a6f2">
+Problem 1.2: The filtering
+1) Upon providing data in the filters and submitting the form, the application displays the filtered data in an organized manner.
+<img width="1440" alt="Screenshot 2024-03-30 at 11 18 46 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/7cc9d100-5cdc-4538-9518-407977011f0d">
 
-<img width="1440" alt="Screenshot 2024-03<img width="1440" alt="Screenshot 2024-03-30 at 11 23 53 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/9aecae84-45ee-4e2b-9dbe-8b6ed1bf6f99">
--30 at 11 19 10 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/bcb13b4d-0436-4f84-b4a9-a5dc27353152">
+2) The filter functionality operates independently based on title, album title, and full email, allowing users to refine their search criteria precisely.
+<img width="1440" alt="Screenshot 2024-03-30 at 11 19 10 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/d3c8b1ed-6b5f-4534-86e6-95f28683db67">
 
+Problem 1.3: The pagination
+1)The "pagesize" feature displays the number of items per page in the application, providing users with control over the amount of data visible at once.
+<img width="1440" alt="Screenshot 2024-03-30 at 11 23 53 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/f677e7b9-67f6-46b7-85a4-8f3ab3491ba6">
+2)The application includes functionality to specify start and end pages, allowing users to navigate through paginated data efficiently. Users can move to the next page or previous page to explore additional content, enhancing their browsing experience. This feature optimizes data presentation and facilitates seamless access to information across multiple pages.
+ <img width="1440" alt="Screenshot 2024-03-30 at 11 25 36 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/09abab72-86e0-45ac-869f-c2336f368199">
+ 
+ Extra Features on click Get username and Image when click on thumbnailurl in default page
+ <img width="1440" alt="Screenshot 2024-03-30 at 11 33 50 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fd2de239-f6cb-48a0-b8b5-4c868235fe65">
 
-<img width="1440" alt="Screenshot 2024-03-30 at 11 18 46 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/6deaeb29-3a5e-4173-aa56-5911736b019b">
+Part 3: Extra Points
+ 
+Implement a CI/CD pipeline to deploy your project to the cloud provider
+--Public URLs:
+1) URL to test the web application
+    - [METAPHOTO Web App](https://metagallery.azurewebsites.net/)
+2) URL to test the web application
+    - [METAPHOTO API](https://metaphotoapi.azurewebsites.net//externalapi/photos/1)
 
+--YAML files have been supplied to facilitate CI/CD deployments to Azure.
 
 ## Usage
-
+##Conclusion
 Upon running the application, users can:
 
 - Visualize photos and associated data in the application UI.
 - Navigate through albums and user information using pagination with limit and offset parameters.
 - Implement filters for title, email, or a combination of both, providing refined search results.
+- Displaying Popup to show Related Photo to thumbnail Url.
 
 
 
