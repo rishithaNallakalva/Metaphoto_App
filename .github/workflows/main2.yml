@@ -29,15 +29,12 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-      - name: Move build output to MetaPhotoApi/build
-        run: |
-          mkdir -p MetaPhotoApi/build
-          mv build/* MetaPhotoApi/build
+          
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: MetaPhotoApi/build
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
