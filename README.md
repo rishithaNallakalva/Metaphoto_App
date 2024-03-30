@@ -86,8 +86,9 @@ To clone a repository to your local machine or store your code on GitHub, follow
 
 6. **Push Changes to GitHub**:
    Finally, to push your changes to the GitHub repository, run the following command in the Terminal:
-  ```
-git push origin main
+
+   ```
+   git push origin main
   ```
 
 ## Usage
