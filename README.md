@@ -1,3 +1,7 @@
+Certainly! Below is a breakdown of the provided information, organized line by line for clarity, suitable for writing in a readme file:
+
+---
+
 # METAPHOTO Application
 
 ## Introduction
@@ -8,13 +12,17 @@ METAPHOTO is an innovative application developed to visualize photos along with 
 
 METAPHOTO is built using the following technologies:
 
-- ReactJS : For the user interface development, providing a dynamic and responsive front-end experience.
-- NodeJS: As the backend environment for handling API requests and managing server-side operations.
-- ExpressJS: A fast and minimalist web framework for Node.js, used for building robust APIs.
-- HTML: For structuring the web pages and presenting content.
-- CSS: Utilized for styling and enhancing the visual appeal of the application.
-- POSTMAN: To check data.
-- GITHUB: To clone codes in repository.
+- **ReactJS**: For the user interface development, providing a dynamic and responsive front-end experience.
+- **NodeJS**: As the backend environment for handling API requests and managing server-side operations.
+- **ExpressJS**: A fast and minimalist web framework for Node.js, used for building robust APIs.
+- **HTML**: For structuring the web pages and presenting content.
+- **CSS**: Utilized for styling and enhancing the visual appeal of the application.
+- **POSTMAN**: To check data.
+- **GITHUB**: To clone codes in repository.
+- **Azure**: Deployed project to Cloud to generate public URL by CI/CD pipelines.
+  - Public URLs:
+    - [METAPHOTO Web App](https://metagallery.azurewebsites.net/)
+    - [METAPHOTO API](https://metaphotoapi.azurewebsites.net//externalapi/photos/1)
 
 ## Development Process
 
@@ -25,30 +33,47 @@ METAPHOTO is built using the following technologies:
 
 ### Creating React App
 
+#### React
 1. Create a new React app using the following command:
+   ```
    npx create-react-app Metaphoto_App-main
+   ```
 2. Navigate to the newly created directory:
+   ```
    cd Metaphoto_App-main
+   ```
+
+#### Node.js
+Run these commands to generate a folder inside Metaphoto_App-main:
+   ```
+   mkdir MetaPhotoApi                      
+   cd MetaPhotoApi
+   npm init -y
+   npm install express --save
+   ```
 
 ### Installing Dependencies
 
 Ensure all required packages and dependencies are installed by running:
+```
 npm install
-
+```
 
 ### Running the Application
 
 Launch the application to build and open it in a web browser window:
-
+```
 npm start
+```
 
 ### Backend Development
 
 1. Develop APIs using Node.js and Express.js to handle requests and serve data.
-2.  Access JSON data from provided endpoints:
-   - (https://jsonplaceholder.typicode.com/users)
-   - (https://jsonplaceholder.typicode.com/photos)
-   - (https://jsonplaceholder.typicode.com/albums)
+2. Access JSON data from provided endpoints:
+   - [Users Endpoint](https://jsonplaceholder.typicode.com/users)
+   - [Photos Endpoint](https://jsonplaceholder.typicode.com/photos)
+   - [Albums Endpoint](https://jsonplaceholder.typicode.com/albums)
+
 ### Cloning Web Repository to GitHub
 
 To clone a repository to your local machine or store your code on GitHub, follow these steps:
@@ -73,32 +98,36 @@ To clone a repository to your local machine or store your code on GitHub, follow
 
 4. **Pull Latest Changes**:
    To pull the latest changes from the repository, navigate to the repository directory using the Terminal and run:
-  ```
+   ```
    git pull origin main
-  ```
+   ```
 
 5. **Commit Your Changes**:
    After making changes to your local repository, you need to commit those changes. Navigate to the repository directory using the Terminal and run:
    ```
    git add .
-   git commit -m 'Your commit message here'
-  ```
+   git commit -m 'New UI changes for photo album page'
+   ```
 
 6. **Push Changes to GitHub**:
    Finally, to push your changes to the GitHub repository, run the following command in the Terminal:
-
    ```
    git push origin main
-  ```
+   ```
+
+Deployed codes to Azure cloud through CI/CD pipelines.
+
+Application generated Screenshots:
+(Add screenshots here)
 
 ## Usage
+
 Upon running the application, users can:
 
 - Visualize photos and associated data in the application UI.
 - Navigate through albums and user information using pagination with limit and offset parameters.
 - Implement filters for title, email, or a combination of both, providing refined search results.
-- Enjoy a seamless browsing experience with the intuitive and responsive design.
 
-## Conclusion
+---
 
-METAPHOTO offers a comprehensive solution for managing and exploring photos and related information. With its blend of ReactJS for dynamic UI and NodeJS/ExpressJS for robust backend support, METAPHOTO ensures an efficient and enjoyable user experience.
+Feel free to customize this readme file according to your specific needs, adding any additional information or instructions as necessary.
