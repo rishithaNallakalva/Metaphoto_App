@@ -121,6 +121,10 @@ The default page displays various options, including filtration, pagination, and
 Problem 1.1: The data enrichment
 An external API endpoint has been developed by integrating internal API endpoints. This consolidated endpoint retrieves photo information along with associated album and user details in a single API call. By leveraging existing internal API endpoints, we ensure efficient data retrieval while minimizing network overhead and improving user experience.
 <img width="1440" alt="Screenshot 2024-03-30 at 10 35 30 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/4ba9dee4-3646-4fb4-a3dd-06bebd738a6a">
+
+-https://metaphotoapi.azurewebsites.net//externalapi/photos?album.title=quidem&limit=10&offset=50
+<img width="1440" alt="Screenshot 2024-03-30 at 1 55 43 PM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/2109ef28-8a92-4a3a-8c81-91d5d0051632">
+
 <img width="1440" alt="Screenshot 2024-03-30 at 11 57 23 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/6c07993b-18a3-46fb-bc8a-ded25586bc45">
 
 Problem 1.2: The filtering
