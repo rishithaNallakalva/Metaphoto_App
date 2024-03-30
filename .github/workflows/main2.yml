@@ -32,8 +32,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: node-app
-          path: MetaPhotoApi/build
+          name: node-app          
 
   deploy:
     runs-on: ubuntu-latest
