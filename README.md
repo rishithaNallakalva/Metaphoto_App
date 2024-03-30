@@ -147,7 +147,9 @@ Implement a CI/CD pipeline to deploy your project to the cloud provider
 2) URL to test the web application
     - [METAPHOTO API](https://metaphotoapi.azurewebsites.net//externalapi/photos/1)
 
+
 --YAML files have been supplied to facilitate CI/CD deployments.
+https://github.com/rishithaNallakalva/Metaphoto_App/tree/main/.github/workflows
 --Deployed codes to Azure cloud through CI/CD pipelines.
 
 ## Usage
