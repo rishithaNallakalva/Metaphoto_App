@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPhoto } from './actions';
+import CardDetails from '../CardDetails/index.js';
 import './index.css'; // Import CSS file
 
 const PhotoComponent = () => {
@@ -11,6 +12,8 @@ const PhotoComponent = () => {
 
   const { title, albumTitle, userEmail } = filters;
   const { limit, offset, currentPage } = pagination;
+  const [selectedPhoto, setSelectedPhoto] = useState(null); // Initialize selectedPhoto with null
+
 
   useEffect(() => {
     dispatch(fetchPhoto({ ...filters, limit, offset }));
@@ -56,8 +59,15 @@ const loading=useSelector(state=>state.loading)
     const totalPages = Math.ceil(5000 / limit);
     handlePagination((totalPages - 1) * limit);
   };
+const handleImageClick=(photo)=>{
+  console.log('Imageeeeeeeeeeeeeeeeee',photo.url);
+  setSelectedPhoto(photo)
 
- 
+}
+ const handleCloseModal = () => {
+  setSelectedPhoto(null); // Reset selected photo to close the modal
+};
+
 
 return (
   <div>
@@ -89,24 +99,31 @@ return (
     </div>
     {/* Display the gallery only if photos are available and data fetching is completed */}
     {(photos && photos.photo && photos.photo.length > 0) && (
-      <div className="photo-gallery">
-        <div className="gallery-container">
-          {photos.photo.map((photoItem, index) => (
-            <div key={photoItem.id} className="gallery-item">
-              <img src={photoItem.thumbnailUrl} alt={photoItem.title} />
-              <div className="item-content">
-                <p>
-                  <strong>Title:</strong> {photoItem.title} {photoItem.id}<br />
-                  <strong>Album Title:</strong> {photoItem.album.title}<br />
-                  <strong>UserEmail:</strong> {photoItem.album.user.email}
-                </p>
+        <div className="photo-gallery">
+          <div className="gallery-container">
+            {photos.photo.map((photoItem, index) => (
+              <div key={photoItem.id} className="gallery-item">
+                <img src={photoItem.thumbnailUrl} alt={photoItem.title} onClick={() => handleImageClick(photoItem)} />
+                <div className="item-content">
+                  <p>
+                    <strong>Title:</strong> {photoItem.title} {photoItem.id}<br />
+                    <strong>Album Title:</strong> {photoItem.album.title}<br />
+                    <strong>UserEmail:</strong> {photoItem.album.user.email}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    )}
-
+      )}
+{selectedPhoto && (
+  <div className="modal">
+    <div className="modal-content">
+      <span className="close" onClick={handleCloseModal}>&times;</span>
+      <CardDetails photo={selectedPhoto} />
+    </div>
+  </div>
+)}
 {(!loading && Object.values(tempFilters).some(value => value !== '') && photos && photos.photo && photos.photo.length === 0) && (
   <div className="no-data-message">
     <p>The filtered data does not exist.</p>

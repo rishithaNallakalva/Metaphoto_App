@@ -1,0 +1,31 @@
+/* CardDetails.css */
+.card-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+
+  }
+  
+  .card-details h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .details-content {
+    margin-top: 10px;
+  }
+  .details-content img{
+    width: 66%;
+  }
+  .details-content p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .details-content strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

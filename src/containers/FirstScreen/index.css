@@ -130,3 +130,39 @@
     cursor: not-allowed;
   }
   
+
+  /* index.css */
+
+/* Modal styles */
+/* In your CSS file */
+.modal {
+  position: fixed; /* Position the modal relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the modal cover the entire viewport width */
+  height: 100%; /* Make the modal cover the entire viewport height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure the modal is above other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative; /* Relative position for close button positioning */
+  background-color: #fff; /* Background color for the modal content */
+  border-radius: 8px;
+  padding: 80px 30px 30px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  max-width: 80%; /* Limit maximum width of the modal */
+  max-height: 80%; /* Limit maximum height of the modal */
+  overflow: hidden; /* Enable scrolling if content exceeds modal size */
+}
+
+.close {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  cursor: pointer;
+  font-size:xx-large
+}
