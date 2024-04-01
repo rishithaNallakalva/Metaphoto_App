@@ -9,7 +9,7 @@ METAPHOTO is an innovative application developed to visualize photos along with 
 
 METAPHOTO is built using the following technologies:
 
-- **ReactJS**: For the user interface development, providing a dynamic and responsive front-end experience.
+- **ReactJS(Redux)**: For the user interface development, providing a dynamic and responsive front-end experience.
 - **NodeJS**: As the backend environment for handling API requests and managing server-side operations.
 - **ExpressJS**: A fast and minimalist web framework for Node.js, used for building robust APIs.
 - **HTML**: For structuring the web pages and presenting content.
