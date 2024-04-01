@@ -2,14 +2,19 @@
 import React from 'react';
 import './index.css'; 
 const CardDetails = ({ photo }) => {
-    console.log('i am in car5d')
   return (
     <div className="card-details">
-      <h3>Photo Details</h3>
       <div className="details-content">
       <img src={photo.url} alt={photo.title} />
-
-        <p><strong>Username:</strong> {photo.album.user.email}</p>
+        <p><strong>Username:</strong> {photo.album.user.username}</p>
+        <p><strong>Phone Number:</strong> {photo.album.user.phone}</p>
+        <p><strong>Website URl:</strong> {photo.album.user.website}</p>
+        <p><strong>Address:</strong> {photo.album.user.address.city}
+          {photo.album.user.address.street},
+          {photo.album.user.address.city},
+          {photo.album.user.address.suite},
+          {photo.album.user.address.city},
+          {photo.album.user.address.zipcode}</p>
       </div>
     </div>
   );
