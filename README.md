@@ -142,7 +142,7 @@ Problem 1.3: The pagination
  <img width="1440" alt="Screenshot 2024-03-30 at 11 25 36 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/09abab72-86e0-45ac-869f-c2336f368199">
  
  Extra Features on click Get username and Image when click on thumbnailurl in default page.
- <img width="1440" alt="Screenshot 2024-03-30 at 11 33 50 AM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/fd2de239-f6cb-48a0-b8b5-4c868235fe65">
+ <img width="1440" alt="Screenshot 2024-03-31 at 11 28 01 PM" src="https://github.com/rishithaNallakalva/Metaphoto_App/assets/165237917/de2d2944-bc5d-4c1c-ad3a-1a5f349da8b6">
 
 ### Part 3: Extra Points
  
